@@ -53,4 +53,16 @@ Library Repository Creation
 	b. version=1.0.0
 	c. author =Alex, SparkFun Electronics <techsupport@sparkfun.com> (We give Alex credit first since we are forking his library and modifying it). 
 	c. Maintainer=SparkFun Electronics <sparkfun.com>
-	d. 
+	d. Sentence=Library for the TLC5940 IC. 
+	e. Paragraph=The TLC5940 gives the user 16 channel PWM control and can be daisy chained over the serial interface. This library works with the <a href="https://www.sparkfun.com/products/10616">SparkFun LED Driver Breakout</a> and the <a href="https://www.sparkfun.com/products/10615">SparkFun PWM Shield</a>.
+	f. category=Signal Input/Output (Check the Arduino Library specs for the category options).
+	g. url=https://github.com/sparkfun/SparkFun_TLC5940_Arduino_Library
+	h. architectures=avr
+7. Commit and push all changes to library repo.
+	a. $git add --all
+	b. $git commit -m 'Updating library.properties file, adding library code.'
+	c. $git push origin master
+8. Tag new library release. 
+	a. $git tag -a V_1.0.0 -m 'Library version 1.0.0' <most recent commit hash>
+	b. $git push --tags
+9. Double check hardware repo to make sure subtree changes are pulled in. 
